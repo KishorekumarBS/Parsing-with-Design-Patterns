@@ -19,13 +19,13 @@ headElementDecorator.
 9. Add a style tag to the head element using the addStyleTagToHead method.
 10. Serialize the rootNode and save it to an output.html file using the saveToFile method.
 Here's a brief overview of the main components:
-• CompositeNode: A class representing an HTML node with the ability to process JS and CSS content. It is
+* CompositeNode: A class representing an HTML node with the ability to process JS and CSS content. It is
 a subclass of the abstract HTMLNode class. The DivElement and ParagraphElement classes extend
 CompositeNode to represent div and p elements, respectively.
-• DecoratorNode: An abstract class extending HTMLNode and implementing the Decorator Design
+* DecoratorNode: An abstract class extending HTMLNode and implementing the Decorator Design
 Pattern. It has three concrete subclasses: HeadElementDecorator, ClassAttributeDecorator, and
 CSSDecoratorNode.
-• HeadElementDecorator: Updates the title of the head element or creates one if it doesn't exist.
-• ClassAttributeDecorator: Adds a class attribute to specified elements in the document.
-• CSSDecoratorNode: Parses and applies CSS styles to the elements in the document.
+* HeadElementDecorator: Updates the title of the head element or creates one if it doesn't exist.
+* ClassAttributeDecorator: Adds a class attribute to specified elements in the document.
+* CSSDecoratorNode: Parses and applies CSS styles to the elements in the document.
 The above-mentioned points are the basic overview of the working code.
